@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Header from './components/Header.js'
 import Stories from './components/Stories.js'
+import Comments from './components/Comments'
 
 
 
@@ -19,6 +20,7 @@ export default class App extends Component {
       <div>
         <Header className="Instagram" />
         <Stories/>
+        <Comments/>
         <Footer footer="Footer" />
       </div>
     )
