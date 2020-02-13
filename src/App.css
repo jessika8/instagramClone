@@ -1,8 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Satisfy&display=swap');
+
 .mainHeader {
   display: flex;
   justify-content: space-between;
+  font-family: 'Satisfy', cursive;
+  font-size: 3.5vh;
+  background-color: rgb(241, 240, 240);
+  border-bottom: 0.5px solid rgb(189, 187, 187,0.87);
+  margin-bottom: 0.5vh;
+  align-items: baseline;
+  margin-top: -2vh;
+  max-height: 10vh;
 }
 
 .mainHeader ion-icon {
-  font-size: 5vh
+  font-size: 4vh;
+  margin-left: 2vh;
+  margin-right: 2vh;
+  margin-top: -1vh;
 }
+
+.StoryImage{
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom: 0.5px solid rgba(189, 187, 187, 0.87);
+  padding-bottom: -1vh;
+}
+.StoryImage p{
+  display: flex;
+  font-size: 12px;
+  justify-content: space-evenly;
+  font-weight: 400;
+  margin-bottom: 1vh;
+}
+
+
+
