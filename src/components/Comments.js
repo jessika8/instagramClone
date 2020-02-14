@@ -5,7 +5,6 @@ export default class Comments extends Component {
     state = {
         userInput: "",
         comments: [],
-        heart2: false,
     }
 
     onChangeHandler = (event) => {
@@ -37,21 +36,6 @@ export default class Comments extends Component {
         })
     }
 }
-    heartColour2 = (like2) => {
-
-        if(like2 == "like2") {
-            console.log("I like this");
-            this.setState({
-                heart2: true
-            })
-        } else if(like2 == "unlike2") {
-            console.log("I am unliking this");
-            this.setState({
-                heart2: false
-            })
-        }
-        
-    }
     
         
     render() {

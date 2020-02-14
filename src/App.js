@@ -16,7 +16,17 @@ import Post from './components/Post.js'
 import Post7 from './images/quiggs.jpg'
 import Footer from './components/Footer.js'
 
-// import Profile from './images/bevs.png'
+// profile pics
+import profile1 from './images/ed.png'
+import profile2 from './images/bevs.png'
+import profile3 from './images/aaron.png'
+import profile4 from './images/billie.png'
+import profile5 from './images/lewis.png'
+import profile6 from './images/anthony.png'
+
+
+
+
 export default class App extends Component {
 
 
@@ -30,19 +40,18 @@ export default class App extends Component {
       
         <Header className="Instagram" />
         <Stories />
-        <Comments/>
         <Footer footer="Footer" />
-        <Post img={Post1} caption="Some text here"/>
-        <Post img={Post2} />
-        <Post img={Post3} />
-        <Post img={Post4} />
-        <Post img={Post5} />
-        <Post img={Post6}  />
-        <Post img={Post7}  />
+        <Post profilePic={profile1} userName="KendallJenner" img={Post1} caption="G casually laying around. Isn't she gorg xx"/>
+        <Post profilePic={profile1} userName="HumptyDumpty" img={Post2} caption="feeling on eggde x saucy minxx #sauce"/>
+        <Post profilePic={profile2} userName="Kylie_xo" img={Post3} caption="felt cute, might delete l8tr x x <3"/>
+        <Post profilePic={profile3} userName="Justin_b" img={Post4} caption="#liveLaughLove"/>
+        <Post profilePic={profile4} userName="Bill_1234" img={Post5} caption="im really not a bad guy tho x #duh"/>
+        <Post profilePic={profile5} userName="The Royals" img={Post6}  caption="hope andrew hasnt been eyein me bird up #itsOkSheNotAMinor"/>
+        <Post profilePic={profile6} userName="Quiggs*123" img={Post7} caption="sick of this shit. birds hit me up" />
       
        
         
-        <Footer  />
+        {/* <Footer  /> */}
         
       </div>
     )

@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Satisfy&display=swap');
 
+*{
+  max-width: 100%;
+}
+
 .mainHeader {
   display: flex;
   justify-content: space-between;
@@ -21,6 +25,7 @@
   margin-left: 2vh;
   margin-right: 2vh;
   margin-top: -1vh;
+  max-width: 100%;
 }
 
 .StoryImage{
@@ -53,8 +58,6 @@ footer{
   background-color: white;
   position: fixed;
   width: 100%
-  
-  
 }
 
 .footer1 ion-icon {
@@ -103,6 +106,8 @@ li {
 .y {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  padding: 3px;
   /* align-items: baseline */
   /* align-items: center;
   justify-content: baseline */
@@ -111,17 +116,20 @@ li {
 }
 .x {
   display: flex;
-justify-content: space-between;
+  align-items: center;
+/* justify-content: space-between; */
 
 }
+.icon{
+  align-self: center
+}
 .x ion-icon {
+  /* display: flex; */
 margin-top: 1.3vh;
-margin-left: 44vh;
+float: right;
+font-size: 4vh;
 }
-.userName {
-  margin-top: 1.3vh;
-  margin-left: 1vh
-}
+
 
 .firstFourIcon ion-icon{
   margin-left: 0.5vh;

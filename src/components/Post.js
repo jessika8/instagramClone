@@ -8,6 +8,7 @@ export default class Post extends Component {
         comments: [],
         heart: false,
         like: 0,
+        heart2: false,
         
     }
 
@@ -41,28 +42,40 @@ export default class Post extends Component {
     }
 }
 
-incramentLike = () => {
-    this.setState({
-        like: this.state.like +1
-    })
+
+heartColour = (like) => {
+    
+    if(like === "like") {
+        console.log("I like this");
+        this.setState({
+            heart: true,
+            like: this.state.like +1
+        }) 
+        
+    } else if(like === "unlike") {
+        console.log("I am unliking this");
+        this.setState({
+            heart: false,
+            like: this.state.like -1
+        })
+    }
+    
 }
+    heartColour2 = (like2) => {
 
-    heartColour = (like) => {
-
-        if(like === "like") {
+        if(like2 == "like2") {
             console.log("I like this");
             this.setState({
-                heart: true
+                heart2: true
             })
-        } else if(like === "unlike") {
+        } else if(like2 == "unlike2") {
             console.log("I am unliking this");
             this.setState({
-                heart: false
+                heart2: false
             })
         }
         
     }
-
 
 
     render() {
@@ -71,9 +84,13 @@ incramentLike = () => {
             // return <h1>{task}</h1>
             return <li value={index}>
                         {task}
-                        {
+                        {/* {
                             this.state.heart ? <button className="removeButton" onClick={() => this.heartColour("unlike") }><ion-icon name="heart"></ion-icon></button> : 
                         <button className="removeButton" onClick={() => this.heartColour("like") }><ion-icon name="heart-outline"></ion-icon></button>
+                        } */}
+                        {
+                            this.state.heart2 ? <button className="removeButton" onClick={() => this.heartColour2("unlike2") }><ion-icon name="heart"></ion-icon></button> : 
+                        <button className="removeButton" onClick={() => this.heartColour2("like2") }><ion-icon name="heart-outline"></ion-icon></button>
                         }
                         
                      </li>
@@ -83,16 +100,18 @@ incramentLike = () => {
 
             <div>
                 <div className="y">
-                <img className="profile" src={Aaron}/>
-                <div className="x">
-                <h6 className="userName">a_hebs</h6>
+                    <div className="x">
+                <img className="profile" src={this.props.profilePic}/>
+                <h6 className="userName">{this.props.userName}</h6>
+                </div>
+                <div className="icon" >
                 <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
                 </div>
                 </div>
                 <img className="mainPicture" src={this.props.img} alt="img" />
                <div className="firstFourIcon">
                {
-                            this.state.heart ? <button className="removeButton" onClick={() => this.heartColour("unlike") }><ion-icon name="heart"></ion-icon></button> : 
+                            this.state.heart ? <button className="removeButton" onClick={() => this.heartColour("unlike")} ><ion-icon name="heart"></ion-icon></button> : 
                         <button className="removeButton" onClick={() => this.heartColour("like") }><ion-icon name="heart-outline"></ion-icon></button>
                         }
 
@@ -104,8 +123,8 @@ incramentLike = () => {
 
 
 
-                <h6>{this.props.like}</h6>
-                <h6>a_hebs</h6>
+                <h6>{this.state.like} likes</h6>
+                <h6>{this.props.userName}</h6>
                 <p>{this.props.caption}</p>
 
                 <div className="commentsWholeDiv">
