@@ -5,7 +5,7 @@ export default class Comments extends Component {
     state = {
         userInput: "",
         comments: [],
-        colour: 'red'
+        heart: false,
     }
 
     onChangeHandler = (event) => {
@@ -37,10 +37,20 @@ export default class Comments extends Component {
         })
     }
 }
-    heartColour = () => {
-        this.setState({
-            colour: true
-        })
+    heartColour = (like) => {
+
+        if(like == "like") {
+            console.log("I like this");
+            this.setState({
+                heart: true
+            })
+        } else if(like == "unlike") {
+            console.log("I am unliking this");
+            this.setState({
+                heart: false
+            })
+        }
+        
     }
     
         
@@ -50,7 +60,11 @@ export default class Comments extends Component {
             // return <h1>{task}</h1>
             return <li value={index}>
                         {task}
-                        <button className="removeButton" onClick={() => this.heartColour(index) }><ion-icon name="heart-outline"></ion-icon></button>
+                        {
+                            this.state.heart ? <button className="removeButton" onClick={() => this.heartColour("unlike") }><ion-icon name="heart"></ion-icon></button> : 
+                        <button className="removeButton" onClick={() => this.heartColour("like") }><ion-icon name="heart-outline"></ion-icon></button>
+                        }
+                        
                      </li>
         })
 
