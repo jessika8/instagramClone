@@ -9,8 +9,11 @@
   border-bottom: 0.5px solid rgb(189, 187, 187,0.87);
   margin-bottom: 0.5vh;
   align-items: baseline;
-  margin-top: -2vh;
+  /* margin-top: 10vh; */
   max-height: 10vh;
+  position: fixed;
+  top: 0;
+  width: 100%
 }
 
 .mainHeader ion-icon {
@@ -25,6 +28,8 @@
   justify-content: space-evenly;
   border-bottom: 0.5px solid rgba(189, 187, 187, 0.87);
   padding-bottom: -1vh;
+  background-color: white;
+  margin-top: 11.5vh
 }
 .StoryImage p{
   display: flex;
@@ -40,11 +45,15 @@ h3{
 
 
 footer{
-  /* justify-content: space-evenly; */
+  justify-content: space-evenly;
   position: absolute;
   bottom: 0;
   border-top: 0.5px solid rgba(189, 187, 187, 0.87);
   padding-top: 0.5vh;
+  background-color: white;
+  position: fixed;
+  width: 100%
+  
   
 }
 
@@ -57,16 +66,16 @@ footer{
 }
 
 .commentsProfilePic {
-  width: 5vh;
+  width: 4vh;
 }
 .commentsDiv1 {
   display: flex;
+  padding-bottom: 3vh
 }
 .input {
   width: 800vw;
   border-radius: 25%;
-  border-style: solid;
-  border-color: gray;
+  border-style: none;
 }
 .postButton {
   border-style: none;
@@ -86,3 +95,46 @@ li {
   border-style: none;
   background-color: white;
 }
+.mainPicture {
+  width: 100%
+}
+.profile {
+  height: 4vh;
+}
+.y {
+  display: flex;
+  flex-direction: row;
+  /* align-items: baseline */
+  /* align-items: center;
+  justify-content: baseline */
+  
+
+}
+.x {
+  display: flex;
+justify-content: space-between;
+
+}
+.x ion-icon {
+margin-top: 1.3vh;
+margin-left: 44vh;
+}
+.userName {
+  margin-top: 1.3vh;
+  margin-left: 1vh
+}
+
+.firstFourIcon ion-icon{
+  margin-left: 0.5vh;
+  font-size: 3vh;
+}
+
+#bookmark{
+  /* display: flex; */
+  justify-items: flex-end;
+  float: right;
+  margin-right: 5px;
+  font-size: 3vh;
+}
+
+
