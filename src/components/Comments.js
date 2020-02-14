@@ -72,7 +72,7 @@ export default class Comments extends Component {
             <div className="commentsWholeDiv">
                 <div className="commentsDiv1">
                 <img className="commentsProfilePic" src={Aaron} alt="Aaron"/>
-                <input className="input" type="text"  placeholder="Add a comment as..." value={this.state.userInput} onChange={this.onChangeHandler} />
+                <input className="input" type="text"  placeholder="Add a comment..." value={this.state.userInput} onChange={this.onChangeHandler} />
                 <button className="postButton" onClick={this.addToDo} >Post</button>
                 </div>
                 {allTasks}
