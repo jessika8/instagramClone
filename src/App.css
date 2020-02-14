@@ -54,4 +54,33 @@ footer{
  margin-left: 7px;
 }
 
+.commentsProfilePic {
+  width: 5vh;
+}
+.commentsDiv1 {
+  display: flex;
+}
+.input {
+  width: 800vw;
+  border-radius: 25%;
+  border-style: solid;
+  border-color: gray;
+}
+.postButton {
+  border-style: none;
+  background-color: white;
+  margin-bottom: 1vh;
+}
+li {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  width: 75vw;
+  margin-left: 5vh;
+  margin-bottom: 1vh;
+}
 
+.removeButton {
+  border-style: none;
+  background-color: white;
+}
