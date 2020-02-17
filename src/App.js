@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Header from './components/Header.js'
 import Stories from './components/Stories.js'
-import Comments from './components/Comments'
+import Direct from './components/Direct'
 // import Post from './components/Post'
 
 
@@ -17,11 +17,11 @@ import Post7 from './images/quiggs.jpg'
 import Footer from './components/Footer.js'
 
 // profile pics
-import profile1 from './images/ed.png'
+import profile1 from './images/kendallprofile.png'
 import profile2 from './images/bevs.png'
-import profile3 from './images/aaron.png'
-import profile4 from './images/billie.png'
-import profile5 from './images/lewis.png'
+import profile3 from './images/kylieprofile.png'
+import profile4 from './images/jbprofile.png'
+import profile5 from './images/meganlogo.png'
 import profile6 from './images/anthony.png'
 
 
