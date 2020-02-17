@@ -98,7 +98,7 @@ heartColour = (like) => {
 
         return (
 
-            <div>
+            <div className="postDiv">
                 <div className="y">
                     <div className="x">
                 <img className="profile" src={this.props.profilePic}/>
